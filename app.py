@@ -14,7 +14,7 @@ st.set_page_config(
 # PERSONAL DETAILS
 # ==============================
 
-friend_name = "Ali"
+friend_name = "Dear"
 photo_path = "birthday_photo.jpg"
 
 # ==============================
@@ -179,10 +179,10 @@ if st.button(
         unsafe_allow_html=True
     )
 
-with open("birthday_music.wav", "rb") as audio_file:
+with open("birthday_music.mp3", "rb") as audio_file:
     audio_bytes = audio_file.read()
 
-st.audio(audio_bytes, format="audio/wav")
+st.audio(audio_bytes, format="audio/mp3")
 
 
 
